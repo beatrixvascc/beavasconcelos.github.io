@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    char sexo;
+    float salario;
+    printf("diga o salario: ");
+    scanf("%f", &salario);
+    printf("diga o sexo: ");
+    scanf(" %c", &sexo);
+    if (sexo=='m'||sexo=='M')
+      printf("imposto: %.2f\n", salario*0.15);
+     else
+      if (sexo=='f'||sexo=='F')
+       printf("imposto: %.2f\n", salario*0.10);
+    return 0;   
+}
