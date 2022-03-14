@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+    int horas;
+    horas>0;
+    long int res;
+    char type;
+    printf("diga as horas: ");
+    scanf("%d", &horas);
+    printf("diga o tipo: ");
+    scanf(" %c", &type);
+    switch (type)
+    {
+        case 'm': 
+        case 'M': res = horas*60L;
+        break;
+        case 's':
+        case 'S': res = horas*3600L;
+        break;
+        case 'd':
+        case 'D': res = horas*36000L;
+    }
+    printf("%d turn %ld%c\n", horas, res, type);
+    
+
+    return 0;
+}
